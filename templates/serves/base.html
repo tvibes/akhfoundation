@@ -1,0 +1,287 @@
+<!-- Loading the static files (contains js, css, images, fonts) -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{%block title%}
+		   Philanthropy | A. K. Horsfall Foundation, Nigeria
+		{%endblock%}
+	</title>
+
+	<!-- Site Meta Tags Begin -->
+
+    {%block meta%}
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta name="description" content="AK Horsfall Foundation, A Philanthropy Organization in Port Harcourt, Nigeria">
+		<meta name="keyword" content="Philanthropy Organization, Philanthropy Foundation, Charity Organization, Charity Foundation">
+		<meta property="og:site_title" content="Philanthropy">
+		<meta property="og:site_name" content="akhorsfallfoundation.org">
+		<meta name="author" content="AK Horsfall Foundation">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% endblock meta%}
+
+    <!-- Site Meta Tags End -->
+
+    <!-- CSS Files Below -->
+
+    {%block static_css%}
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="{% static 'akhorsfall/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="screen">
+        <link href="{% static 'akhorsfall/css/style.css' %}" type="text/css" rel="stylesheet" media="screen">
+        <link href="{% static 'akhorsfall/css/custom_style.css' %}" rel="stylesheet" media="screen" type="text/css">
+        <link href="{% static 'akhorsfall/css/navbar.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'akhorsfall/css/tools.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'akhorsfall/css/dark_footer.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'akhorsfall/css/social_media_icons.css' %}">
+        <link href="{% static 'akhorsfall/css/responsive.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'akhorsfall/css/animated.min.css' %}" rel="stylesheet">
+        <link href="{% static 'akhorsfall/css/fullwidth_header.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'akhorsfall/css/megamenu.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'akhorsfall/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="{% static 'akhorsfall/css/bootstrap-theme.min.css' %}" rel="stylesheet" media="screen">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+        <!-- Linking megafolio CSS & JS files -->
+        <link type="text/css" href="{% static 'megafolio/css/settings.css' %}">
+        <script type="text/javascript" src="{% static 'megafolio/js/jquery.themepunch.megafoliopro.js' %}"></script>
+        <script type="text/javascript" src="{% static 'megafolio/js/jquery.themepunch.plugins.min.js' %}"></script>
+        <link type="text/css" href="{% static 'megafolio/fancybox/jquery.fancybox-2.1.3.css' %}" media="screen">
+        <script type="text/javascript" src="{% static 'megafolio/fancybox/helpers/jquery.fancybox-media.js' %}"></script>
+        <script type="text/javascript" src="{% static 'megafolio/fancybox/jquery.fancybox.pack-2.1.3.js' %}"></script>
+
+        <!-- Styling for mega_menu -->
+        <link rel="stylesheet" href="{% static 'akhorsfall/css/megamenu.css' %}" type="text/css">
+
+        <!-- Font Awesome linked -->
+        <link href="{% static 'akhorsfall/fonts/font-awesome.min.css' %}" rel="stylesheet">
+
+        <!-- Styling for revolution -->
+        <link rel="stylesheet" href="{% static 'revolution/css/layers.css' %}">
+        <link rel="stylesheet" href="{% static 'revolution/css/settings.css' %}">
+        <link rel="stylesheet" href="{% static 'revolution/css/navigation.css' %}">
+
+        <!-- Loading favicons -->
+        <link rel="shortcut icon" href="{% static 'akhorsfall/images/favicon.png' %}">
+
+        <!-- Load icons and fonts -->
+        <link rel="stylesheet" href="{% static 'revolution/fonts/pe-icon-7-stroke css pe-icon-7-stroke.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'revolution/fonts/font-awesome css font-awesome.min.css' %}" type="text/css">
+
+
+
+        <!-- Showbiz styling -->
+        <link href="{% static 'showbizpro/css/settings.css' %}" rel="stylesheet" type="text/css" media="screen">
+        <link href="{% static 'akhorsfall/css/style-showbizpro.css' %}" rel="stylesheet" type="text/css" media="screen">
+
+        <!-- Fancybox assets -->
+        <link type="text/css" href="{% static 'showbizpro/fancybox/jquery.fancybox.css' %}" rel="stylesheet">
+        <!--<script type="text/javascript" src="showbizpro/fancybox/jquery.fancybox.pack.js"></script> It must be disable for youtube and vimeo videos to inside the megafolio-->
+
+        <!-- Showbiz JS files -->
+        <!--<script type="text/javascript" src="showbizpro/js/jquery.themepunch.tools.min.js"></script>-->
+        <script type="text/javascript" src="{% static 'showbizpro/js/jquery.themepunch.showbizpro.min.js' %}"></script>
+
+	{%endblock static_css%}
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+        <!--[if lte IE 7]><script src="js/socialmediaicons-lte-ie7.js"></script><![endif]-->
+
+</head>
+<body>
+
+<header>
+
+    <!-- Site header begins -->
+    <!-- toolbar start -->
+    <div class="row toolbar hidden-xs">
+        <div class="container">
+            <div class="col-sm-6 col-xs-6">
+                <span class="glyphicon glyphicon-earphone"></span> +234 (0) 084 300 189
+                <span class="separator"></span><a href="mailto:info@akhorsfallfoundation.org">
+                <span class="glyphicon glyphicon-envelope" style="margin-right: 4px"></span>info@akhorsfallfoundation.org</a>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <div class="social-media-icons pull-right">
+                    <a href="#" title="Facebook" class="tooltip-bottom" data-toggle="tooltip"><span aria-hidden="true" class="mk-social-facebook"></span></a>
+                    <a href="#" title="Twitter" class="tooltip-bottom" data-toggle="tooltip"><span aria-hidden="true" class="mk-social-twitter-alt"></span></a>
+                </div>
+            </div>
+        </div>
+    </div><div></div>
+    <!-- toolbar ends -->
+
+    <!-- Main navigation area begins -->
+    <div class="row header-main">
+        <div class="container">
+
+            <!-- Main navigation menu begins -->
+            <nav class="navbar custom megamenu">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-2" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span>
+                        <span class="icon-bar"></span></button><a href="{% url 'home' %}" class="navbar-brand"><img src="{% static 'akhorsfall/images/logo.png' %}" class="img-responsive" alt="logo"></a>
+                </div>
+                <div id="navbar-collapse-2" class="navbar-collapse collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+                              <ul class="dropdown-menu ">
+                                  <li><a href="#">The Vision</a></li>
+                                  <li><a href="#">Our Mission</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Explore<b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">Projects</a></li>
+                                  <li><a href="#">Achievements</a></li>
+                                  <li><a href="#" class="">Score Card</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="{% url 'healthcare' %}">Healthcare</a></li>
+                                  <li><a href="{% url 'education_and_training' %}">Education</a></li>
+                                  <li><a href="{% url 'youths_empowerment' %}">Youths Empowerment</a></li>
+                                  <li><a href="{% url 'peace_and_security' %}">Peace & Security</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#" >Partners</a></li>
+                          <li><a href="#" class="donate" >Donate</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Main navigation menu ends -->
+        </div>
+    </div>
+</header>
+
+    <!-- main head section end! -->
+
+
+    <!-- Main navigation area ends! -->
+
+
+
+
+    <!-- Defining blocks for site contents (includes links) -->
+    {% block home %}
+
+    {% endblock %}
+
+    {% block about_us %}
+
+    {% endblock %}
+
+    {% block our_mission %}
+
+    {% endblock %}
+
+    {% block youths_empowerment %}
+
+    {% endblock %}
+
+    {% block healthcare %}
+
+    {% endblock %}
+
+    {% block peace_and_security %}
+
+    {% endblock %}
+
+    {% block education_and_trainng %}
+
+    {% endblock %}
+
+    {% block vission_and_mission %}
+
+    {% endblock %}
+
+    <!-- Block definitions end! -->
+
+    <!-- Beginning of site footer -->
+    <!-- Our customer support Starts -->
+    <section id="content-2-1" class="content-block content-2-1 bg-river">
+      <div class="container text-center"> <a href="#" class="btn btn-outline outline-light wow fadeInUp">Support Us</a>
+        <h2 class="white wow fadeInUp">PHILANTHROPY CREATED THROUGH  <strong class="sunflower">PARTNERSHIPS </strong> & PEOPLE!</h2>
+        <p class="white top30 wow fadeInUp"><strong>We've formed strong ties with governments, individuals,
+                            public <br/> and private sectors, combined with public awareness
+                            to touch thousands of lives till date. <br />As we continue to pursue this life-changing course, you can become a big part.</strong></p>
+      </div>
+    </section>
+    <!-- Site footer begins -->
+
+    <div class="row mainbottom">
+        <div class="container top20">
+            <div class="col-md-3 col-sm-6 col-xs-12 bottom-box1 links">
+                <h4 class="box-title">About us</h4>
+                <ul class="link-list1">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="">Our Core Values</a></li>
+                    <li><a href="">Success Stories</a></li>
+                    <li><a href="">Partners</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Portfolios</a></li>
+                    <li><a href="">Mission & Vision</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 bottom-box1 links"><h4 class="module-title2">Get Involved</h4>
+                <ul class="link-list-2">
+                    <li><a href="">How To Donate</a></li>
+                    <li><a href="">Become a Volunteer</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Support Our Programs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 bottom-box1 links"><h4 class="module-title2">News & Events</h4>
+                <ul class="link-list-1">
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Press Center</a></li>
+                    <li><a href="">Scholarship</a></li>
+                    <li><a href="">Programs</a></li>
+                    <li><a href="">Resource Center</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 bottom-box4 "><h4 class="module-title2">Contact</h4>
+                <p>
+                    <i class="glyphicon glyphicon-map-marker"></i>  3A Eleme Street, Old G.R.A
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-earphone"></i> +234 (0) 84 300 189
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-envelope"></i><a href="mailto:info@akhorsfallfoundation.org" style="color: darkgreen">info@akhorsfallfoundation.org</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="container">
+            <div class="col-md-6 col-sm-6 col-xs-5"><p class="copyright">&copy 2018. All Rights Reserved.</p></div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <p class="copyright pull-right">Designed & Developed: <a href="http://quiqswitch.com">QuiqSwitch</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Site footer ends -->
+
+    {%block jsfiles%}
+        <script type="text/javascript" src="{% static 'akhorsfall/js/customjs.js' %}"></script>
+        <script type="text/javascript" src="{% static 'akhorsfall/js/jquery-3.2.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'akhorsfall/js/popper.min.js' %}" rel="script"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="{% static 'akhorsfall/js/bootstrap.min.js' %}"></script>
+
+
+    {%endblock%}
+</body>
+</html>

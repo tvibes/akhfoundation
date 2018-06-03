@@ -1,0 +1,61 @@
+{% extends 'serves/base.html' %}
+
+{% load static %}
+
+{% block education_and_trainng %}
+
+    <div class="main" role="main">
+      	<!-- subheader starts -->
+      		<div class="row business-header education " style="background: url('{% static "akhorsfall/images/programs/education.jpg" %}') center top no-repeat">
+      			<div class="container">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="custom-page-header">
+                            <h1>We keep people closer to education</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top: 120px;">
+                        <ol class="breadcrumb pull-right" style="color: lightgreen;">
+                          <li><a href="{% url 'home' %}">Home</a></li>
+                          <li><a href="#">Programs</a></li>
+                          <li class="active">Education & Training</li>
+                        </ol>
+    				</div>
+    			</div>
+      		</div>   	<!-- subheader ends -->
+            <div class="row" style="margin-bottom: 40px">
+                <div class="container">
+                    <div class="col-md-8 wow fadeInLeft ">
+                        <h2 class="page-header top30" style="color: limegreen">The fundamental human right</h2>
+                        <p style="color: #8c8c8c">Education not only opens doors of opportunity to a better living standard, it also broadens our views about world affairs and social norms around the world, helping us become more tolerant and law-abiding citizens. Illiteracy is not caused by a lack of intelligence; rather it is often a result of outside factors that can be addressed.</p>
+                        <p style="color: #8c8c8c">The Foundation pursues vigorously its aim of providing nursery, primary, secondary, vocational and higher education to outstanding individuals </p>
+                    </div>
+                    <div class="col-md-4 wow fadeInRight">
+                        <h2 class="page-header top30" style="color: limegreen">Scholarship</h2>
+                        <p style="color: #8c8c8c">The foundation encourages educational advancement in the Rivers and Bayelsa States and other parts of the Niger Delta, awarding partial or full scholarship and academic grants to deserving individuals. </p>
+                        <a class="cta_donate btn btn-primary" href="{% url 'donate' %}">Become a Donor</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Module Start -->
+
+            <div class="row top70 bottom30 " >
+                <div class="container">
+                    <div class="col-sm-6 "> <img class="img-rounded img-responsive" src="{% static 'akhorsfall/images/programs/educational-apps-ipad.png' %}" alt=""> </div>
+                    <div class="col-sm-6">
+                        <h2 style="color: limegreen">Educational advancement</h2>
+                        <p style="color: #8c8c8c"> The A.K. Horsfall Foundation promotes educational advancement in the Rivers and Bayelsa States and other parts of the Niger Delta by:</p>
+                        <ul class="educational_advancement">
+                            <li class="edu_support"><p  style="color: #8d8d8d; ">Support grants and endowments to the SE-KURO OF KALABARI INSTITUTE to facilitate access to modern systems of learning, science and technological skills acquisition.</p></li>
+                            <li class="edu_support"><p style="color: #8d8d8d">Encouraging academic excellence in the catchment area by instituting scholarships and prize awards.</p></li>
+                            <li class="edu_support"><p style="color: #8d8d8d">Facilitating institutional growth and excellence through support grants for exchange programmes between the SE-KURO OF KALABARI INSTITUTE and other centres of excellence within or outside Nigeria.</p></li>
+                        </ul>
+                        <div class="col-sm-5 col-xs-12"> <a href="#" class="btn btn-block btn-dark" style="color: #FFFFFF"> Request for Grant</a> </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <!-- Service Module End -->
+
+     	    <!-- Content end -->
+{% endblock %}

@@ -1,0 +1,244 @@
+/* #################################
+Styling applied on banner
+ */
+
+.body{
+    font: 15px/2.5em "Open Sans", sans-serif;
+	color: #747474;
+}
+
+section.bg-river{
+    background: #6DDCBD !important;
+    height: 160px;
+    width: 100%;
+}
+
+.bg-river h3, p{
+    color: #fff;
+}
+
+.bg-river h3{
+    text-transform: uppercase;
+}
+
+.col-xs-10{
+    width: 83.333%;
+}
+
+.image_wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.image_wrapper .container{
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.image_wrapper .container h2, p{
+    color: #FFFFFF;
+}
+
+.image_wrapper .container h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 35px;
+    clear: both;
+}
+
+.image_wrapper .container p{
+    font-size: 26px;
+}
+
+.wrapper_text{
+    line-height: 5px;
+}
+
+
+.image_wrapper .container p, a{
+    line-height: 20px;
+}
+
+a.cta_about{
+    background: 0;
+    border: 1px solid #f7f7f7;
+    border-radius: 2px;
+    width: 150px;
+    height: 38px;
+
+
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+a.cta_about:hover{
+    background: #FFFFFF;
+    color: #8c8c8c;
+    border: none;
+}
+
+section.content-block.content-2-1.bg-river{
+   background: steelblue !important;
+    height: auto !important;
+}
+
+.col-lg-4.col-md-4.col-sm-12.col-xs-12.white.padding-top20.padding-bottom30.bg-deepocean{
+    background: #00A8FF;
+    height: 160px;
+}
+
+.col-lg-4.col-md-4.col-sm-12.col-xs-12.white.padding-top20.padding-bottom30.bg-aqua{
+    height: 160px;
+    background: #7c1212;
+}
+
+.col-sm-3.text-center p{
+    color: #8c8c8c;
+}
+
+.col-sm-3.text-center h4{
+    color: #4cae4c;
+    font-weight: bold;
+}
+
+.col-sm-3.text-center a.btn.btn-primary.top20{
+    border: none;
+    color: #ffffff;
+    background: #4cae4c;
+    border-radius: 2px;
+}
+
+.col-sm-3.text-center a.btn.btn-primary.top20:hover{
+    background: #0f0f0f;
+}
+
+div.style-title >p.text{
+    padding-top: 20px;
+}
+
+.col-md-4.col-sm-12.col-xs-12 p{
+    color: #8c8c8c;
+}
+.river{
+    color: green !important;
+}
+
+/* Styling on about us */
+
+.about_image_wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.about_image_wrapper .container{
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: justify;
+}
+
+.about_image_wrapper .container h2{
+    background: none;
+}
+
+.col-sm-8.wow.fadeInLeft p{
+    color:#8c8c8c ;
+}
+
+.col-lg-12.col-md-12 h2{
+    color: #3c763d;
+}
+
+.about_more_subhead{
+    font-weight: bolder;
+}
+
+.green_subhead{
+    color: green;
+}
+
+p.sub_head_content{
+    color:#8c8c8c ;
+}
+
+.programs_image_wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.business-header {
+	height: 370px;
+    width: 100%;
+	background-size: cover;
+}
+
+.custom-page-header h1{
+    background: darkred !important;
+}
+
+.row.business-header.education{
+    margin-bottom: 30px;
+}
+
+a.cta_donate.btn.btn-primary:hover{
+    background: limegreen;
+    color: white;
+}
+
+a.cta_donate.btn.btn-primary{
+    background: black;
+    border-radius: 5px;
+    border: none;
+}
+
+.row.top70.bottom30{
+    margin-bottom: 100px !important;
+}
+
+h3.medicals{
+    color: limegreen !important;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px){
+    .image_wrapper img{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    section.bg-river{
+        height: auto;
+    }
+
+    img.img-responsive.img-rounded{
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about_image_wrapper .container h2{
+        font-size: 10px;
+        display: none;
+        overflow: hidden;
+    }
+
+    .about_image_wrapper p{
+        font-size: 10px;
+        display: none;
+    }
+
+    .image_wrapper img{
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .background-image-holder-corporate.img.img-responsive{
+        height: auto;
+        display: none;
+    }
+}

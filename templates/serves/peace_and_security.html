@@ -1,0 +1,40 @@
+{% extends 'serves/base.html' %}
+{% load static %}
+
+{% block peace_and_security %}
+
+    <div class="main" role="main">
+        <div class="row business-header healthcare" style="background: url('{% static 'akhorsfall/images/programs/sec/peace1.jpg' %}') center top no-repeat">
+            <div class="container">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="custom-page-header">
+                            <h1>Peace &amp; Security</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top: 120px;">
+                        <ol class="breadcrumb pull-right" style="color: lightgreen;">
+                          <li><a href="{% url 'home' %}">Home</a></li>
+                          <li><a href="#">Programs</a></li>
+                          <li class="active">Peace &amp; Security</li>
+                        </ol>
+    				</div>
+    			</div>
+        </div>
+        <div class="row" style="margin-top: 60px; margin-bottom: 80px">
+            <div class="container">
+                <div class="col-md-8 wow fadeInLeft ">
+                    <h2 class="page-header top30" style="color: limegreen"> With this in place confidence is restored </h2>
+                    <p style="color: #8c8c8c">Peace and security are imperative to the development of any people and nation, as conflicts and insecurity inhabits development and diverts resources to wasteful channels. As sustainable development policies cannot easily break directly into the micro-economies of conflict, the A.K Horsfall Foundation makes unrelenting efforts to broker sustainable peace and security in various violent communities within the Niger Delta in which notable successes had been recorded. An instance of such results is in Buguma City of Asari-Toru Local Government when law and order broke down in that city resulting in youth violence, indiscriminate killing and maiming of members of that community resulting in the sack of that community following that incident. </p>
+                    <p style="color: #8c8c8c">Consequently, a peace accord under the aegis of Chief A.K. Horsfall was held in which the various issues were discussed by all responsible members of the community, an accord was signed and peace returned to the community with those who fled returning to settle down in their home peacefully.</p>
+                    <p style="color: #8c8c8c"> </p>
+                </div>
+                <div class="col-md-4 wow fadeInRight">
+                    <h2 class="page-header top30" style="color: limegreen">It's Necessary</h2>
+                    <img src="{% static 'akhorsfall/images/programs/sec/security1.jpg' %}" class="img-responsive">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
